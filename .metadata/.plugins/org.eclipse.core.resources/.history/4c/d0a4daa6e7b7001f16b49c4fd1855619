@@ -1,0 +1,8 @@
+package com.mycompany.entity;
+
+public class Employe1 {
+  
+	int e_id;
+	String e_name;
+	String e_age;
+}
