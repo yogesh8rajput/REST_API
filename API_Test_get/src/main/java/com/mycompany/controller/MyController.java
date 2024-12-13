@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mycompany.entity.Employee1;
@@ -32,8 +33,10 @@ public class MyController {
    
    
    @PostMapping("/post")
-   public Employee1 post(@PathVariable Employee1 employee1)
+   public Employee1 post(@RequestBody Employee1 employee1)
    {
-	   return es.post(employee1);
+	   return employee1=es.post(employee1);
+	   
+//	   return es.post(employee1);
    }
 }
