@@ -11,6 +11,7 @@ import com.mycompany.dao.Test_imageDao;
 import com.mycompany.entity.Test_image;
 import com.mycompany.services.Test_image_services;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
+
+@CrossOrigin(origins = "http://localhost:5173")
 public class MyController {
 
 	@Autowired
