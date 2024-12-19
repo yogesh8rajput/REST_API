@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>Spring_Aop_Test</groupId>
+  <artifactId>Spring_Aop_Test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Spring_Aop_Test</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  
+  <dependencies>
+<!--  Spring Core (Ensure consistency of version)  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-aop</artifactId>
+<version>6.0.12</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-aspects  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-aspects</artifactId>
+<version>6.0.0</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.aspectj/aspectjrt  -->
+<dependency>
+<groupId>org.aspectj</groupId>
+<artifactId>aspectjrt</artifactId>
+<version>1.9.6</version>
+<scope>runtime</scope>
+</dependency>
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-context</artifactId>
+<version>6.0.10</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-core  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-core</artifactId>
+<version>6.0.10</version>
+</dependency>
+
+<!--  JUnit 5 (Updated to modern version)  -->
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<version>5.8.2</version>
+<!--  Modern JUnit version  -->
+<scope>test</scope>
+</dependency>
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-engine</artifactId>
+<version>5.8.2</version>
+<!--  JUnit engine for tests  -->
+<scope>test</scope>
+</dependency>
+  
+  
+  
+  
+  
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
