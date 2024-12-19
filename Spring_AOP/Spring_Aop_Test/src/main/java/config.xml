@@ -6,5 +6,5 @@
 	<!-- Enable AspectJ auto-proxy support -->
 	<aop:aspectj-autoproxy />
 	<!-- Define the PaymentServiceImpl bean -->
-	<bean name="psii" class="com.mycompany.payment.PaymentServiceImp" />
+	<bean name="psi" class="com.mycompany.payment.PaymentServiceImp" />
 </beans>
