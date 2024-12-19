@@ -28,13 +28,13 @@ public class SecurityConfig {
 	public UserDetailsService userDetailsService()
 	{
 	UserDetails normal=User
-			.withUsername("shamlal")
+			.withUsername("user")
 			.password(passwordEncoder().encode("123"))
 			.roles("NORMAL")
 			.build();
 	
 	UserDetails admin=User
-			.withUsername("babulal")
+			.withUsername("admin")
 			.password(passwordEncoder().encode("456"))
 			.roles("ADMIN")
 			.build();
