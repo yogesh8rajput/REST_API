@@ -27,7 +27,8 @@ public class MyController {
    @GetMapping("/getAll")
    public Iterator<Employee1> getAll()
    {
-	   
+	   Iterator<Employee1> itr=es.getAll();
+	   //System.out.println("valllluuuuue!!!!!!!!!!!!!!");
 	   return es.getAll();
    }
    

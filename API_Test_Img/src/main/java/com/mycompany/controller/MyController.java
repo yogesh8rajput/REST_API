@@ -31,7 +31,13 @@ public class MyController {
 	
 	@GetMapping("/getAll")
 	public Iterator<Test_image> getAll() {
-		return  tis.getAll();
+		
+//		Iterator<Test_image> itr=tis.getAll();
+		
+//		   System.out.println("valllluuuuue!!!!!!!!!!!!!!"+itr.next().getS_img());
+		   return tis.getAll();
+		
+		
 	}
 	
 	@GetMapping("/getAll/{id}")
