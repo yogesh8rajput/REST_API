@@ -19,7 +19,7 @@ public class App
 
     	ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");    
         
-        PaymentService ps=context.getBean("psi",PaymentServiceImp.class);
+        PaymentService ps=context.getBean("psi",PaymentService.class);
         
         
         ps.makePayment();
