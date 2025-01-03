@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,4 +36,15 @@ public class GraphController {
 		return productService.getProductsByCategory(category);
 	}
 	
+	@MutationMapping
+	public Product updateStock(@Argument int id,@Argument int stock)
+	{
+		return productService.updateStock(id, stock);
+	}
+	
+	@MutationMapping
+	public Product recieveNewShipment(@Argument int id,@Argument int stock)
+	{
+		return productService.recieveNewShipment(id, stock);
+	}
 }
