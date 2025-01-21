@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.mycompany.dao.Test_imageDao;
 import com.mycompany.entity.Test_image;
@@ -38,10 +39,13 @@ public class Test_image_services {
 		tid.deleteById(id);
 	}
 	
-	public Test_image put(@RequestBody Test_image test_image) {
+	public Test_image put(@RequestBody  Test_image test_image) {
 		Optional<Test_image> op=tid.findById(test_image.getS_id());
+//		Optional<Test_image> op1=tid.findById(test_image.getS_id());
+		
 		Test_image t=op.get();
 	     t.setS_name(test_image.getS_name());
+	     t.setS_img(test_image.getS_img());
 	     return tid.save(t);
 	}
 	

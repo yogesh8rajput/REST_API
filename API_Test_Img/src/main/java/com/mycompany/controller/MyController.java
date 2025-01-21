@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.mycompany.dao.Test_imageDao;
 
@@ -58,11 +59,10 @@ public class MyController {
 		
 	}
 	
-	   @PutMapping("/put")
-	   public Test_image put(@RequestBody Test_image test_image) {
-	      
-	       
-	       return tis.put(test_image);
-	   }
+	@PutMapping("/put")
+	public Test_image put(@RequestBody  Test_image test_image) {
+	    return tis.put(test_image);  
+	}
+
 	
 }
